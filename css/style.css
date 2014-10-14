@@ -173,6 +173,24 @@ h3{
 	color:white;
 }
 
+#githubIcon{
+	margin-top:50px;
+	width:100px;
+	height: 50px;
+	background-color: #333;
+	border-radius: 5px;
+	float: right;
+	line-height: 3.25;	
+}
+#githubIcon a{
+	padding-left: 15px;
+	color: #999;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#githubIcon a:hover{
+	color:white;
+}
 /*---- end intro------*/
 
  /*-----------------------divideImage ----------------- */
@@ -204,14 +222,9 @@ h5{
 	
 }
 
-.image3{
+.image3,.image2,.image1{
 	background-image: url("../images/intro-port.jpg");
 }
-
-.image2,.image1{
-	background-color: #333;
-}
-
 
  /*----------------------- end devideImage ----------------- */
 
@@ -463,6 +476,7 @@ h5{
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+	#socialIcons{right:2em;}
 	#info p{font-size: 18px;}
 	#info span{font-size: 36px;}
 	#navigationIcons ul{margin:50px 0 0 0;}
@@ -489,6 +503,7 @@ h5{
 }
 
 @media (max-width: 320px){
+	#socialIcons{right:2em;}
 	#info p{font-size:14px;}
 	#info span{font-size: 24px;}
 	#navigationIcons ul{margin:50px 0 0 0;}

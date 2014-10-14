@@ -9,7 +9,7 @@ $(document).ready(function(){
 	    $target = $(target);
 	      	$('html, body').stop().animate({
 	        	'scrollTop': $target.offset().top
-	    	}, 2900, 'swing', function () {
+	    	}, 2500, 'swing', function () {
 	        	window.location.hash = target;
 	    });
 	});
@@ -78,18 +78,6 @@ $(document).ready(function(){
 	/* calling external jquery plugins*/
 	$('.fancybox').fancybox(); 
 
-
-   	// progressbar
-  	$('#bar-1').jqbar({ label: 'HTML5', value: 90, barColor: '#FF0000' });
-
-    $('#bar-2').jqbar({ label: 'CSS3', value: 90, barColor: '#E80C7A' });
-
-    $('#bar-3').jqbar({ label: 'Javascript', value: 80, barColor: '#15A12C' });
-
-    $('#bar-5').jqbar({ label: 'PHP', value: 60, barColor: '#E807CD' });
-
-    $('#bar-6').jqbar({ label: 'Photoshop', value: 70, barColor: '#B2FF0D' });
-  
 });
 
 
