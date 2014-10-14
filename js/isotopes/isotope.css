@@ -74,11 +74,16 @@
 
 .element-item {
 	margin:5% 1%;
+  width: 230px;
 }
 .element-item img{
+  padding-top: 2%;
 	width:200px;
 	height: 200px;
 
+}
+
+.element-item img:hover{
 }
 
 /*.element-item.photoshop  { background: #F00; background: hsl(   0, 100%, 50%); }

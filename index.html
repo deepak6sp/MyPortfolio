@@ -12,42 +12,44 @@
 	<link href="css/jqbar.css" rel="stylesheet"/>
 	<link href="http://fonts.googleapis.com/css?family=Cabin+Sketch:bold" rel="stylesheet" type="text/css" />
 	<script src="js/jquery-1.11.1.min.js"></script>
+	
 </head>
 <body>
 	<section id="intro">
-		<div id="wrapper">
-		</div>	
-		<div id="name">Deepak <span>Portfolio</span></div>
-		<div id="socialIcons">
-			<ul>
-				<li><a href="" ><img src="images/twitter.png"></a></li>
-				<li><a href="" ><img src="images/facebook.png" ></a></li>
-				<li><a href="" ><img src="images/google-plus.png" ></a></li>
-			</ul>
-		</div>	
-		<header id="container">
-			<div id="info"><span> UX DESIGNER + WEB DEVELOPER</span> <br><p>Based In The Heart Of Melbourne</p></div>
+		<header id="topHeader">	
+			<div class="logo"><a href="">DSP</a></div>
+			<div id="socialIcons">
+				<ul>
+					<li><a href="" ><img src="images/twitter.png"></a></li>
+					<li><a href="" ><img src="images/facebook.png" ></a></li>
+					<li><a href="" ><img src="images/google-plus.png" ></a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="container">
+			<article id="info">
+				<div ><span> UX DESIGNER + WEB DEVELOPER</span> <br><p>Based In The Heart Of Melbourne</p></div>
+			</article>
 			<nav id="navigationIcons">
 				<ul>
-					<li id="circle1" ><a href="#portfolio"><img src="images/portfolioImg.png" ><p>Portfolio</p></li></a>
-					<li id="circle2" ><a href="#skills"><img src="images/skillsImg.png" ><p>Skills</p></li></a>
-					<li id="circle3" ><a href="#contact"><img src="images/contactImg.png" ><p>Contact</p></li></a>
-				</ul>
-			</nav>
-		</header>
-	</section>	
-	<section id="portfolio">
-		<div id="header">
-			<nav id="navMenu">
-				<span class="nav-btn"></span>
-				<div id="logo" ><a href="index.html">DSP</a></div>
-				<ul>
-					<li><a href="#portfolio" class="active">Portfolio</a></li>
-					<li ><a href="#skills">Skills</a></li>
-					<li ><a href="#contact">Contact</a></li>
+					<li ><a href="#portfolio"><img src="images/portfolioImg.png" ><p>Portfolio</p></li></a>
+					<li ><a href="#skills"><img src="images/skillsImg.png" ><p>Skills</p></li></a>
+					<li ><a href="#contact"><img src="images/contactImg.png" ><p>Contact</p></li></a>
 				</ul>
 			</nav>
 		</div>
+	</section>
+	<div id="divider" class="image1" ><p>“WE ARE STUCK WITH TECHNOLOGY WHEN WHAT WE REALLY WANT IS STUFF THAT WORKS"<h5>-Douglas Adams</h5></p></div>
+	<section id="portfolio">
+		<nav id="navMenu">
+			<span class="nav-btn"></span>
+			<div id="logo" ><a href="index.html">DSP</a></div>
+			<ul>
+				<li><a href="#portfolio" class="active">Portfolio</a></li>
+				<li ><a href="#skills">Skills</a></li>
+				<li ><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 		<div id="mainContent">
 			<div id="filters" class="button-group">
 				<button class="button is-checked" data-filter="*">All</button>
@@ -75,83 +77,56 @@
 			</div>
 		</div>
 	</section>
-
+	<div id="divider" class="image2" ><p>"IMAGINATION IS MORE IMPORTANT THAN KNOWLEDGE"<h5>-Albert Einstein</h5></p></div>
 	<section id="skills">
-		<article id="skillset">
-			Being a Front end developer my main skills include minimal usability designs using core XHTML/HTML5, CSS3 and Javascript(Jquery) but not limited to using frameworks such as Boilerplate, Bootstrap and Angular. Have experience using PHP (wordpress), Ruby on rails and MYSQL. These are my skills which I use while designing websites.
+		<article><p>
+			I am a freelance Designer and Developer.I create beautiful designs in Photoshop. I develop with skills of minimal usability designs and using core XHTML/HTML5, CSS3(bootstrap) and Javascript(Jquery) but not limited to using frameworks such as Boilerplate, Bootstrap and Angular for single page applications. Have experience using PHP (wordpress) and MYSQL and knowledge of MVC ruby on rails. I have passion for what i do and really love web technologies, and hope to do this forever.</p>
 		</article>
-		<div id="circular">
-			<div id="diagram" align="center"></div>
-			<div class="get">
-				<div class="arc">
-					<span class="text">HTML5</span>
-					<input type="hidden" class="percent" value="100" />
-					<input type="hidden" class="color" value="#FF0000" />
-				</div>
-				<div class="arc">
-					<span class="text">CSS3</span>
-					<input type="hidden" class="percent" value="100" />
-					<input type="hidden" class="color" value="#E80C7A" />
-				</div>
-				<div class="arc">
-					<span class="text">JavaScript</span>
-					<input type="hidden" class="percent" value="90" />
-					<input type="hidden" class="color" value="#15A12C" />
-				</div>
-				<div class="arc">
-					<span class="text">JQuery</span>
-					<input type="hidden" class="percent" value="90" />
-					<input type="hidden" class="color" value="#ffffff" />
-				</div>
-				<div class="arc">
-					<span class="text">PHP</span>
-					<input type="hidden" class="percent" value="50" />
-					<input type="hidden" class="color" value="#E807CD" />
-				</div>
-				<div class="arc">
-					<span class="text">MySQL</span>
-					<input type="hidden" class="percent" value="50" />
-					<input type="hidden" class="color" value="#B2FF0D" />
-				</div>
+		<div id="skillset">
+				<ul id="parentskillset">
+					<li>Web Languages
+						<ul id="childskillset">
+							<li>HTML5/XHTML</li>
+							<li>CSS3</li>
+							<li>JavaScript/Jquery</li>
+							<li>PHP</li>
+						</ul>
+					</li>
+					<li>Web Frameworks
+						<ul id="childskillset">
+							<li>Bootstrap/SAAS</li>
+							<li>Angular</li>							
+							<li>WordPress</li>
+							<li>Ruby on Rails</li>
+						</ul>
+					</li>
+					<li>Collaboration
+						<ul id="childskillset">
+							<li>GitHub</li>
+							<li>Bower</li>
+							<li>Grunt</li>
+							<li>Yomen</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-		</div>
- 		<div id="progressBar">
-			<div id="bar-1">
-            </div>
-            <div id="bar-2">
-            </div>
-            <div id="bar-3">
-            </div>
-            <div id="bar-4">
-            </div>
-            <div id="bar-5">
-            </div>
-            <div id="bar-6">
-            </div>
-		</div>
-		<div id="gap"></div>
+		<div id="github"><a href="https://github.com/deepak6sp" target="_blank"> Click Here to view my github </a></div>
 	</section> 
+	<div id="divider" class="image3" ><p>THE ONLY WAY TO DO GREAT WORK IS TO LOVE WHAT YOU DO"<h5>-Steve Jobs</h5></p></div>
 	<section id="contact">
 		<div></div>
 		<aside id="form">
-			<h3 align="center">
-			<p>0422596332 or deepak6sp@gmail.com</p></h3>
+			<h3 align="center"><p>0422596332 or deepak6sp@gmail.com</p></h3>
 			<hr>
 			<form class="form"  action="contact.php" method="post">
+				<h4 align="center"><p>Got A project? Keep In Touch !!!</p></h4>
 				<h4><input id="fname" name="fname" type="text" placeholder="Name"></h4>
 				<h4><input id="email" name="email" type="email" placeholder="Email address"></h4>
 				<h4><textarea name="message" placeholder="Message"></textarea> </h4>
 				<input id="submit" name="submit" type="submit" value="Send >>">
 			</form>
 		</aside>
-	</section> 
-	<!--
-	<footer id="footer">
-		<div id="designInfo">
-			<h4>Designed By Deepak,Melbourne</h4>
-			<p>Copyrights @2014</p>
-		</div>
-	</footer>-->
+	</section>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 	<script type="text/javascript" src="js/isotopes/isotope.pkgd.min.js"></script>

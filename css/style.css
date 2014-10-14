@@ -1,13 +1,11 @@
 body {
  	margin:0;
  	padding:0;
- 	height:auto;
 }
 
 a{
 	text-decoration: none;
 	list-style: none;
-	color: white;
 }
 
 h3{
@@ -20,54 +18,50 @@ h3{
 /* ----intro -----------*/
 #intro{
 	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-	background-image:url("../images/bg.jpg");
-	background-position: left;
-	background-attachment: fixed;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-
+	border: 1px solid white;
+	background-attachment: fixed;
 }
 
-#wrapper{
-	/*background-color: rgba(0,0,0,.2);*/
-	background: -webkit-linear-gradient(90deg, #780206 50%, #061161 50%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #780206 10%, #061161 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #780206 10%, #061161 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #780206 10%, #061161 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #780206 10%, #061161 90%); /* W3C */
-	width: 100%;
-	bottom:0;
-	opacity: 0.9;
+#topHeader{
+	border-radius: 5px;
+	background-color: #333;
+	width: 90%;
+	margin: 2em auto;
+	height: 100px;
+	position: fixed;
+	margin-left: 5%;
+	z-index:999;
 }
 
-
-#name{
-	color: #FFF8ED;
-	text-shadow: 5px 5px 5px black;
-	top:5%;
-	left: 5%;
-	font-size: 34px;
+.logo a{
+	color: #999;
+	text-shadow: 1px 1px 1px black;
+	font-size: 32px;
+	font-family: Courier New ;
 	position: fixed;
 	width: 10%;
+	line-height: 3.25;
+	float: left;
+	margin-left: 1em;
 }
 
-#name span{
-	font-size: 15px;
-	float:left;
+.logo a:hover{
+	color:#ffffff;
 }
 
 #socialIcons{
-	top:8%;
-	right: 5%;
+	float: right;
+	top:3em;
+	right: 5em;
 	position: fixed;
 }
-
+ 
 #socialIcons ul{
 	margin:0;
 	padding:0;
@@ -75,48 +69,50 @@ h3{
 
 #socialIcons ul li{
 	display: inline-block;
-	width: 40px;
+	width: 50px;
 }
 
 #socialIcons ul li a{
 	text-decoration: none;
-	border: 1px solid #ccc;
+	border: 1px solid #999;
 	text-align:center;
 	font-family: "Times New Roman", Times, serif;
 	border-radius: 50%;
-	padding:15px 5px 2px 5px;
+	padding:20px 5px 2px 5px;
 	transition:background-color 0.5e ease ;
-	background-color:#061161 ;
-	opacity: 0.9;
+	background-color:transparent;
 }
 
 #socialIcons ul li img{
-	width:60%;
-	height: 60%;
-	border-radius: 50%;
+	width:2em;
+	height: 3em;
 	text-align:center;
+	padding-top: 1.25em;
+	opacity: .3;
+	border: none;
 
 }
 
-#socialIcons ul li a:hover{
-	opacity: 1;
-	background-color: #780206;
+#socialIcons ul li img:hover{
+	opacity: .8;
 }
+
+#logo span{
+	font-size: 15px;
+	float:left;
+}
+
+
 #container{
-	top: 35%;
 	width: 100%;
 	height: auto;
-	position: fixed;	
 }
 
 #info{
 	width: 100%;
 	height:auto;
 	text-align: center;
-	font-size: 18px;
-	font-family: Verdana, Geneva, sans-serif;
-	color: white;
-	text-shadow: 5px 5px 5px black;
+	color: #000000;
 }
 
 #info span{
@@ -127,17 +123,17 @@ h3{
 
 #info p{
 	font-size: 24px;
+	font-family: "vivaldi","verdena",sans-serif;;
 }
 
 #navigationIcons{
 	margin:0 auto;
 	width:100%;
 	height: auto;
-	position: fixed;
 }
 
 #navigationIcons ul{
-	margin:70px 0 0 0;
+	margin:0;
 	padding: 0;
 	text-align: center;
 }
@@ -147,58 +143,77 @@ h3{
 	width: 150px;
 	height: 100px;
 	display: inline-block;
-	margin:10px 0 ;
-	
+	margin:10px 0 ;	
 }
 
-/*
 #navigationIcons ul li a{
-	text-decoration: none;
-	border: 5px solid #ccc;
-	box-shadow: 1px 1px 1px #005A7D;
-	text-align:center;
-	font-family: "Times New Roman", Times, serif;
-	background-color:#FFF8ED;
+	color: black;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 18px;
-}*/
+}
+
 #navigationIcons ul li a img{
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
-	opacity: 0.5;
-	border:1px solid white;
+	border:1px solid #ccc;
+	opacity: .3;
 }
+
 #navigationIcons ul li a img:hover{
 	opacity: 1;
 }
 
-#navigationIcons ul li a img p{
+#navigationIcons ul li a p{
 	text-align: center;
-}
-/*.circle1{
-	padding:40px 25px;
-	border-radius: 50%;
+
 }
 
-.circle3{
-	padding:40px 25px;
-	border-radius: 50%;
+#navigationIcons ul li p:hover{
+	color:white;
 }
-.circle2{
-	padding:40px 35px;
-	border-radius: 50%;
-}
-.circle1:hover,.circle3:hover{
-	padding:50px 35px;
-	text-align: center;
-}
-
-.circle2:hover{
-	padding:50px 45px;
-	text-align: center;
-}*/
 
 /*---- end intro------*/
+
+ /*-----------------------divideImage ----------------- */
+
+ #divider{
+	background-repeat: none;
+	background-attachment: fixed;
+	width:100%;
+	height: 400px;
+}
+
+ #divider p{
+ 	padding: 0;
+ 	margin: 0;
+ 	font-size: 70px;
+ 	position: relative;
+ 	top:150px;
+ 	text-align: center;
+ 	color: #ffffff;
+ 	font-size: 15px;
+ 	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ }
+
+h5{
+	font-size: 18px;	
+	color: #ccc;
+	padding-top: 150px;
+	margin-left: 50%;
+	
+}
+
+.image3{
+	background-image: url("../images/intro-port.jpg");
+}
+
+.image2,.image1{
+	background-color: #333;
+}
+
+
+ /*----------------------- end devideImage ----------------- */
 
 
 
@@ -208,33 +223,20 @@ h3{
 	background-repeat: no-repeat;
 	background-position:left;
 	background-size: cover;
-	background-attachment: fixed;
 	max-width: 100%;
 	border: 1px solid #497B96;
-	height: 1000px;
+	height: auto;
 }
 
 /* ---- portfolio header -----------*/
-
-#header {
-	height:auto;	
-	width:100%;
-	margin:0 auto;
-}
-
-.headerFixed{
-	position: fixed;
-  	top:0; 
-  	left:0;
-  	z-index: 2;
-}
-
 
 #logo{
 	float:left;
 	line-height: 3;
 	width:10%;
 	position: fixed;
+	margin-left:4em;
+	font-size: 24px;
 }
 
 #logo a{
@@ -243,24 +245,14 @@ h3{
 }
 
 #navMenu {
-	position: fixed;
-	background: -webkit-linear-gradient(90deg, #780206 50%, #061161 50%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #780206 10%, #061161 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #780206 10%, #061161 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #780206 10%, #061161 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #780206 10%, #061161 90%); /* W3C */
+	background-color: #1a1919;
 	width:100%;
 	margin:0 auto;
-}
-
-.large{
-	height:100px;
-	font-size: 24px;
-}
-
-.small{
-	height: 71px;
-	font-size: 24px;
+	height: 70px;
+	top:0;
+	left:0;
+	position: fixed;
+	z-index: 999;
 }
 
 #navMenu ul{
@@ -286,13 +278,10 @@ h3{
 	color:black;
 	background-color: #F9FFF6;
 }
-.active{
-	border-bottom: 3px solid black;
-
-}
 /* -------end portfolio header ------------ */
 
 #mainContent{
+	height: auto;
 }
 
 #filters{
@@ -320,64 +309,72 @@ h3{
 /*==========================Skills======================================*/
 
 #skills{
-	min-height: 1000px;
+	background-color: #F8F8FF;
+	background-repeat: no-repeat;
+	background-position:left;
+	background-size: cover;
 	max-width: 100%;
-	margin:0 auto;
-	background: -webkit-linear-gradient(90deg, #780206 50%, #061161 50%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #780206 10%, #061161 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #780206 10%, #061161 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #780206 10%, #061161 90%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #780206 10%, #061161 90%); /* W3C */
-    background-size: cover;
+	border: 1px solid #497B96;
+	height: auto;
+}
+
+#skills p{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: justify;
+	font-size: 15px;
+	line-height: 2;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #skillset{
-	width: 80%;
-	margin: 0 auto;
-	padding-top: 100px;
-	text-align: center;
-	font-size: 18px;
-	color: white;
-	line-height: 2;
-	font-family: verdena;
+	margin:0 auto;
+	width:85%;
+	height: auto;
+	padding-top: 50px;
 }
 
-
-#circular{
+#skillset ul{
+	padding: 0;
+	margin:0;
+	text-align: justify;
 }
 
-#diagram{
-	width:100%;
-	height:auto;
-}
-.get{
-	display: none;
-}
-#progressBar{
-	margin-top: 170px;
-	display: none;
+#parentskillset li{
+	text-align: justify;
+	font-size: 20px;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display: inline-block;
+	color: red;
+	margin:2% 9%;
 }
 
+#childskillset li{
+	display: list-item;
+	list-style: none;
+	color: black;
+	font-size: 15px;
+}
 
+#github{
+	clear: both;
+	margin: 2% 8%;
+}
 /*==========================Contact form======================================*/
 #contact{
-	width:100%;
-	height:800px;
-	background-image:url("../images/bg.jpg");
+	background-color: #F8F8FF;
 	background-repeat: no-repeat;
-	background-position:center;
+	background-position:left;
 	background-size: cover;
-	background-attachment: scroll;
-	border: 1px solid black;
-}
-
-#contact div{
-	margin-top: 100px;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid white;
 }
 
 #form{
-	width:80%;
-	margin:0 auto;
+	width:85%;
+	margin:5% auto;
 	font-family: verdena;
 	line-height: 3;
 	min-height:600px;
@@ -445,33 +442,22 @@ h3{
 	background-color: #CDF1FD;
 }
 
-/*#footer{ 
-	text-align: center;
-	background-color: #333;
-	height:50px;
-	bottom:0; left:0;
-  	width: 100%;
-
-}
-
-#designInfo{
-	color:white;
-}*/
-
 @media (min-width: 480px) and (max-width: 600px){
 	.nav-btn{
 		background-image: url("../images/menuButton.jpg");
-		margin-top: 1%;
-		width:60px;
-		height:50px;
+		margin-top: 20px;
+		margin-right: 1em;
+		width:40px;
+		height:35px;
 		cursor: pointer;
 		float: right;
-	}	
+		background-repeat: none; 
+	}
 	#navMenu ul {text-align: left;}
-	#navMenu ul li {display:none;width:100%;background-color: #061161;}
+	#navMenu ul li {display:none;width:100%;background-color: #1A1919;}
 	#navMenu ul li a{padding:22px 500px 22px 50px;text-transform: uppercase;}
-	#diagram{display: none;}
-	#progressBar{display: block;}
+	#portfolio{height: auto;}
+	#logo{margin-left: 2em;}
 	.form input{font-size: 18px; width:98%;}
 	#submit{width:50%;}
 }
@@ -483,18 +469,20 @@ h3{
 	#navigationIcons ul li{width: 98px; height: 75px;}
 	.nav-btn{
 		background-image: url("../images/menuButton.jpg");
-		margin-top: 1%;
-		width:60px;
-		height:50px;
+		margin-top: 20px;
+		margin-right: 1em;
+		width:40px;
+		height:35px;
 		cursor: pointer;
-		float: right; 
+		float: right;
+		background-repeat: none; 
 	}	
 	#navMenu ul {text-align: left;}
-	#navMenu ul li {display:none;width:100%;background-color: #061161;}
+	#navMenu ul li {display:none;width:100%;background-color:#1A1919;}
 	#navMenu ul li a{padding:22px 400px 22px 50px;text-transform: uppercase;}
+	#portfolio{ height: 1500px;}
+	#logo{margin-left: 2em;}
 	.isotope{padding-top: 5%;}
-	#diagram{display: none;}
-	#progressBar{display: block;}
 	.form input{font-size: 18px; width:98%;}
 	.form textarea{font-size: 18px;}
 	#submit{width:50%;}
@@ -505,27 +493,24 @@ h3{
 	#info span{font-size: 24px;}
 	#navigationIcons ul{margin:50px 0 0 0;}
 	#navigationIcons ul li{width: 90px; height: 75px;}
-	.circle1{padding:28px 8px;}
-	.circle2{padding:28px 20px;}
-	.circle3{padding:28px 12px;}
-	.circle1:hover{padding:30px 10px;}
-	.circle2:hover{padding:30px 23px;}
-	.circle3:hover{padding:30px 13px;}
 	.nav-btn{
 		background-image: url("../images/menuButton.jpg");
-		margin-top: 1%;
-		width:60px;
-		height:50px;
+		margin-top: 20px;
+		margin-right: 1em;
+		width:40px;
+		height:35px;
 		cursor: pointer;
 		float: right; 
+		background-repeat: none; 
 	}
 	
 	#navMenu ul {text-align: left;}
-	#navMenu ul li {display:none;width:100%;background-color: #061161;}
+	#navMenu ul li {display:none;width:100%;background-color:#1A1919;}
 	#navMenu ul li a{padding:22px 300px 22px 50px;text-transform: uppercase;}
-	.isotope{padding-top: 5%;}
-	#diagram{display: none;}
-	#progressBar{display: block;}
+	#portfolio{ height: 1500px;}
+	#logo{margin-left: 2em;}
+	.button{padding:1.5em;}
+	.isotope{padding-top: 30%;}
 	.form input{font-size: 18px; width:98%;}
 	#submit{width:50%;}
 }
