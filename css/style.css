@@ -30,10 +30,11 @@ h3{
 
 #topHeader{
 	border-radius: 5px;
-	background-color: #333;
+	background-image: url("../images/topheader.png");
+	background-repeat: no-repeat;
 	width: 90%;
 	margin: 2em auto;
-	height: 100px;
+	height: 80px;
 	position: fixed;
 	margin-left: 5%;
 	z-index:999;
@@ -46,7 +47,7 @@ h3{
 	font-family: Courier New ;
 	position: fixed;
 	width: 10%;
-	line-height: 3.25;
+	line-height: 2.5;
 	float: left;
 	margin-left: 1em;
 }
@@ -57,7 +58,7 @@ h3{
 
 #socialIcons{
 	float: right;
-	top:3em;
+	top:2.5em;
 	right: 5em;
 	position: fixed;
 }
@@ -79,7 +80,6 @@ h3{
 	font-family: "Times New Roman", Times, serif;
 	border-radius: 50%;
 	padding:20px 5px 2px 5px;
-	transition:background-color 0.5e ease ;
 	background-color:transparent;
 }
 
@@ -88,13 +88,13 @@ h3{
 	height: 3em;
 	text-align:center;
 	padding-top: 1.25em;
-	opacity: .3;
+	opacity: .7;
 	border: none;
 
 }
 
 #socialIcons ul li img:hover{
-	opacity: .8;
+	opacity: 1;
 }
 
 #logo span{
@@ -121,7 +121,7 @@ h3{
 	font-size: 48px;
 }
 
-#info p{
+#info h3{
 	font-size: 24px;
 	font-family: "vivaldi","verdena",sans-serif;;
 }
@@ -177,7 +177,7 @@ h3{
 	margin-top:50px;
 	width:100px;
 	height: 50px;
-	background-color: #333;
+	background-color: #141414;
 	border-radius: 5px;
 	float: right;
 	line-height: 3.25;	
@@ -195,14 +195,14 @@ h3{
 
  /*-----------------------divideImage ----------------- */
 
- #divider{
+ .divider{
 	background-repeat: none;
 	background-attachment: fixed;
 	width:100%;
 	height: 400px;
 }
 
- #divider p{
+ .divider p{
  	padding: 0;
  	margin: 0;
  	font-size: 70px;
@@ -238,7 +238,8 @@ h5{
 	background-size: cover;
 	max-width: 100%;
 	border: 1px solid #497B96;
-	height: auto;
+	min-height: 1000px;
+	max-height: auto;
 }
 
 /* ---- portfolio header -----------*/
@@ -291,6 +292,7 @@ h5{
 	color:black;
 	background-color: #F9FFF6;
 }
+
 /* -------end portfolio header ------------ */
 
 #mainContent{
@@ -326,19 +328,20 @@ h5{
 	background-repeat: no-repeat;
 	background-position:left;
 	background-size: cover;
-	max-width: 100%;
 	border: 1px solid #497B96;
-	height: auto;
+	width: 100%;
+	min-height: 700px;
 }
 
-#skills p{
+#skills h4{
 	width: 85%;
 	margin: 0 auto;
 	padding-top: 100px;
 	text-align: justify;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 2;
 	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight: normal;
 }
 
 #skillset{
@@ -354,7 +357,7 @@ h5{
 	text-align: justify;
 }
 
-#parentskillset li{
+#parentskillset>li{
 	text-align: justify;
 	font-size: 20px;
 	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -363,11 +366,11 @@ h5{
 	margin:2% 9%;
 }
 
-#childskillset li{
+.childskillset>li{
 	display: list-item;
 	list-style: none;
 	color: black;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 #github{
@@ -376,52 +379,73 @@ h5{
 }
 /*==========================Contact form======================================*/
 #contact{
-	background-color: #F8F8FF;
-	background-repeat: no-repeat;
-	background-position:left;
-	background-size: cover;
-	max-width: 100%;
-	height: auto;
-	border: 1px solid white;
+	width:100%;
+	overflow: hidden;
+	background-color: #333;
+	min-height: 600px;
+}
+
+#text{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 36px;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+
+}
+.contact{
+	float: left;
+	width:35%;
+	color: white;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	height:500px;
+	background-color: #333;
+	text-align: center;
+	padding-top: 5%;
+}
+
+.contact span{
+	font-style: italic;
 }
 
 #form{
-	width:85%;
-	margin:5% auto;
+	float: left;
+	width:65%;
+	color: black;
 	font-family: verdena;
 	line-height: 3;
-	min-height:600px;
-	background-color: transparent;
-
+	height:500px;
 }
 
 .form input{
 	background-color: transparent;
-	width:46.5%;
+	width:42%;
 	height:55px;
-	color:black;
-	font-family: verdena;
+	color:white;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
 	border-radius: 5px;
-	margin-bottom: 1%;
-	font-size: 24px;
-	border:1px solid black;
+	margin-bottom: 2%;
+	margin-left: 3%;
 }
 
 
 /* place holder color change */
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    black;
+    color:    white;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    black;
+    color:    white;
     opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    black;
+    color:    white;
     opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    black;
+    color:    white;
 }
 
 #name{
@@ -436,23 +460,23 @@ h5{
 .form textarea{
 	margin: 0;
 	height: 200px;
-	width: 98%;
+	width: 92%;
 	background-color: transparent;
-	font-family: verdena;
+	font-family: Vani,"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 18px;
+	color:white;
 	border-radius: 5px;
-	font-size: 24px;
-	border:1px solid black;
+	margin-left: 3%;
 }
 
 
 #submit{
-	color: black;
+	color: white;
 	width:30%;
-	border:1px solid black;
 }
 
 #submit:hover{
-	background-color: #CDF1FD;
+	background-color: #C0C0C0;
 }
 
 @media (min-width: 480px) and (max-width: 600px){
@@ -494,12 +518,14 @@ h5{
 	#navMenu ul {text-align: left;}
 	#navMenu ul li {display:none;width:100%;background-color:#1A1919;}
 	#navMenu ul li a{padding:22px 400px 22px 50px;text-transform: uppercase;}
-	#portfolio{ height: 1500px;}
+	#portfolio{ height: auto;}
 	#logo{margin-left: 2em;}
 	.isotope{padding-top: 5%;}
-	.form input{font-size: 18px; width:98%;}
-	.form textarea{font-size: 18px;}
-	#submit{width:50%;}
+	.contact{width: 100%;border-bottom: 1px dashed white;height: 200px;}
+	#form{float: left;width: 90%;}
+	.form input{text-align:left;font-size: 18px; width:100%;}
+	.form textarea{font-size: 18px;width: 100%;}
+	#submit{width:50%;text-align: center;line-height: 3;}
 }
 
 @media (max-width: 320px){
@@ -522,10 +548,13 @@ h5{
 	#navMenu ul {text-align: left;}
 	#navMenu ul li {display:none;width:100%;background-color:#1A1919;}
 	#navMenu ul li a{padding:22px 300px 22px 50px;text-transform: uppercase;}
-	#portfolio{ height: 1500px;}
+	#portfolio{ height: auto;}
 	#logo{margin-left: 2em;}
 	.button{padding:1.5em;}
 	.isotope{padding-top: 30%;}
-	.form input{font-size: 18px; width:98%;}
-	#submit{width:50%;}
+	.contact{width: 100%;border-bottom: 1px dashed white;height: 200px;}
+	#form{float: left;width: 90%;}
+	.form input{text-align:left;font-size: 18px; width:100%;}
+	.form textarea{font-size: 18px;width: 100%;}
+	#submit{width:50%;text-align: center;line-height: 3;}
 }
