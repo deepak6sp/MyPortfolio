@@ -1,8 +1,7 @@
 $(document).ready(function(){
 	var w_height=$(window).height();
-  	$("#intro").hide();
-	$("#intro").fadeIn(3000);
 	$("#navMenu").hide();
+	$("#info").fadeIn(4000); 
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 	    var target = this.hash,
@@ -15,8 +14,7 @@ $(document).ready(function(){
 	});
 
 	$("#intro").css("height",w_height); //try screen instead window height//
-	$("#contact").css("height",w_height);
-	$("#container").css("margin-top",w_height/3);
+	$("#container").css("margin-top",w_height/4);
   	$(window).on("scroll",function(){
   		if($(window).scrollTop()>w_height/3.5){
   			$("#info").slideUp(300);  				   
@@ -32,10 +30,10 @@ $(document).ready(function(){
   		}
     	if($(window).scrollTop()>w_height/1.5){
    			$("#topHeader").fadeOut(100);
-   			$("#navMenu").slideDown(500);
+   			$("#navMenu").slideDown(500).addClass('animated bounceInDown');
     	}
     	else{
-	     	$("#topHeader").slideDown(1000);
+	     	$("#topHeader").fadeIn(1000);
 	     	$("#navMenu").hide();
     	}
    	});
@@ -47,17 +45,36 @@ $(document).ready(function(){
 	$(window).resize(function(event) {
 	 	if ($(window).width() > 600){
 			$('#navMenu ul li').removeAttr('style');
-	 	}
+			$("#skills").css("height",w_height);
+			$("#contact").css("height",w_height);
+		}
+		else{
+			$("#skills").css("height","auto");
+			$("#contact").css("height","auto");
+		}
 	});
+
+	$('.image').mouseenter(function() {
+		$('.webName').html("Visit Website Click Here");
+	});
+
+	$(window).resize(function(event) {
+	 	if ($(window).width() < 600){
+			$('#navMenu ul li a').click(function(event) {
+	 			$('#navMenu ul li').slideUp(500);
+	 		});	 
+	 	}	
+	});
+
 
 	if ($(window).width() < 600){
 	 	$('#navMenu ul li a').click(function(event) {
 	 		$('#navMenu ul li').slideUp(500);
-	 		$("#skills").css("height",auto);
-	 	});
+	 	});	 	
 	}
 	else{
-			$("#skills").css("height",w_height);
+		$("#skills").css("height",w_height);
+		$("#contact").css("height",w_height);
 	}
 
 	$("#navigationIcons ul li ").on('click', function(event) {
@@ -74,6 +91,7 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		/* Act on the event */
 	});
+
 
 	/* calling external jquery plugins*/
 	$('.fancybox').fancybox(); 

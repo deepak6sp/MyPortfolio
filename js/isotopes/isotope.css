@@ -9,10 +9,8 @@
   display: inline-block;
   padding: 0.5em 1.0em;
   background:none;
-  border: 2px solid #ccc;
-  box-shadow: 1px 1px 1px 1px #005A7D;
-  background-color: #ECFBFD;
-  border-radius: 7px;
+  border: 2px solid #333;
+  background-color: #ccc;
   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: black;
   font-family: sans-serif;
@@ -22,14 +20,14 @@
 }
 
 .button:hover {
-  background-color: #CDF1FD;
+  background-color: #999;
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
   color: #222;
 }
 
 .button:active,
 .button.is-checked {
-  background-color: #CDF1FD;
+  background-color: #999;
 }
 
 .button.is-checked {
@@ -56,12 +54,10 @@
   margin-right: 1px;
 }
 
-.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
 
 .isotope {
-  width: 80%;
-  margin:2% auto;
+  margin:10px auto;
   z-index: 0;
 }
 
